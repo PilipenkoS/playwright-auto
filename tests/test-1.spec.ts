@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-
 await page.goto('https://www.google.ru/');
 await page.getByLabel('Найти').click();
 await page.getByLabel('Найти').fill('лучшие настольные игры');
